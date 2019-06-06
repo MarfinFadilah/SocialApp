@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.fancester.link.MapsActivity" />
+    <TextView
+        android:text="Rod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="409dp"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:translationZ="@dimen/appbar_padding_top"/>
+    <TextView
+        android:text="Rod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="123dp"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:translationZ="@dimen/appbar_padding_top"/>
+    <ListView
+        android:id="@+id/chat_map_list"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_above="@+id/chatMapBox"
+        android:background="#ffffff"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chatMapBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:height="42dp"
+        android:background="#e6e6e6"/>
+    <Button
+        android:text="SEND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatMapButton"
+        android:layout_alignBaseline="@+id/chatMapBox"
+        android:layout_alignBottom="@+id/chatMapBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:layout_above="@+id/chat_map_list"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+</RelativeLayout>

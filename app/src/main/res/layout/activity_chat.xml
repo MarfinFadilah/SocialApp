@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fancester.link.chat">
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="5dp"
+        android:divider = "#00000000"
+        android:dividerHeight = "-5dp"/>
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chatBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="52dp"
+        android:layout_marginBottom="0dp"
+        android:background="#e6e6e6" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="51dp"
+        android:id="@+id/chatButton"
+        android:layout_alignBaseline="@+id/imageView3"
+        android:layout_alignBottom="@+id/chatBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/callsend"/>
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView3"
+        android:gravity="center"
+        android:src="@drawable/emoticon"
+        android:layout_alignTop="@id/chatBox"
+        android:paddingTop="5dp"
+        android:background="#e6e6e6" />
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="52dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_location"
+        android:id="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_alignBottom="@id/imageView3"
+        android:background="#e6e6e6" />
+</RelativeLayout>
